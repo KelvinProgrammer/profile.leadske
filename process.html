@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LeadsKE Growth Process</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .step-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .step-card:hover {
+            transform: translateY(-4px);
+        }
+        .process-line {
+            background: linear-gradient(90deg, #00668a 0%, #38BDF8 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-background": "#191c1e",
+                      "on-tertiary-fixed": "#002113",
+                      "inverse-on-surface": "#eff1f3",
+                      "tertiary-fixed-dim": "#4edea3",
+                      "on-primary-container": "#7c839b",
+                      "surface-bright": "#f7f9fb",
+                      "on-surface-variant": "#45464d",
+                      "error-container": "#ffdad6",
+                      "on-secondary-container": "#004d6a",
+                      "tertiary-container": "#002113",
+                      "secondary": "#00668a",
+                      "surface-dim": "#d8dadc",
+                      "on-primary-fixed": "#131b2e",
+                      "on-error": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "surface-variant": "#e0e3e5",
+                      "tertiary": "#000000",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed": "#c4e7ff",
+                      "primary-fixed": "#dae2fd",
+                      "secondary-container": "#40c2fd",
+                      "surface": "#f7f9fb",
+                      "primary": "#000000",
+                      "surface-container": "#eceef0",
+                      "surface-container-low": "#f2f4f6",
+                      "on-secondary-fixed-variant": "#004c69",
+                      "on-tertiary-fixed-variant": "#005236",
+                      "primary-container": "#131b2e",
+                      "inverse-surface": "#2d3133",
+                      "outline-variant": "#c6c6cd",
+                      "on-surface": "#191c1e",
+                      "secondary-fixed-dim": "#7bd0ff",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-tertiary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "outline": "#76777d",
+                      "surface-tint": "#565e74",
+                      "on-tertiary-container": "#009668",
+                      "inverse-primary": "#bec6e0",
+                      "primary-fixed-dim": "#bec6e0",
+                      "on-secondary-fixed": "#001e2c",
+                      "tertiary-fixed": "#6ffbbe",
+                      "surface-container-lowest": "#ffffff",
+                      "background": "#f7f9fb",
+                      "on-primary": "#ffffff",
+                      "surface-container-high": "#e6e8ea"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "base": "8px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "margin-desktop": "48px"
+              },
+              "fontFamily": {
+                      "headline-xl": ["Inter"],
+                      "label-md": ["Inter"],
+                      "body-md": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "headline-xl-mobile": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "body-sm": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<!-- Header Navigation -->
+<header class="bg-surface docked full-width top-0 z-50 border-b border-outline-variant shadow-sm flex items-center justify-between px-margin-mobile md:px-margin-desktop w-full h-16 sticky">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container flex items-center justify-center">
+<img alt="LeadsKE Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOp7r616bBRM8zGRyUbFjXD1chA-gx6F2Aco-MUlfxAS-OP71nasvDHcRdZ5ze-YOu4JTC9OYN-zANJdsgI6qaCJSO6Cf2KuU7QE5uym92kZG3rcEPv2DdhHDJ3aT38bJAf97VKk9bydJtZ4QtCIeTSP4fss666zWq8Eh2Sko4XGityOpDtBoQ-zY2p9QAGXNOLudVeX9eqZ06zMa2G61d-EWESALymrgSf1D3xFRKAwohCRl28Lhzf4JK4TBhulr2v61vW7ZRWXw"/>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">LeadsKE</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="index.html">Home</a>
+<a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="services.html">Services</a>
+<a class="font-label-md text-secondary font-bold underline decoration-2 underline-offset-4" href="process.html">Process</a>
+<a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="solutions.html">Solutions</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary">more_vert</span>
+</button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 mb-24">
+<!-- Hero Section -->
+<section class="mb-16 text-center md:text-left max-w-3xl">
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4">Precision-Engineered Growth Workflow</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Our systematic approach transforms market noise into high-value revenue streams through a rigorous four-stage conversion engine.</p>
+</section>
+<!-- Process Workflow Visualization -->
+<div class="relative mb-20">
+<!-- Connector Line (Desktop Only) -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-1 process-line -translate-y-1/2 opacity-20 rounded-full"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Step 1: Generate -->
+<div class="step-card bg-surface-container-lowest border border-outline-variant p-8 rounded-xl relative z-10 shadow-sm flex flex-col items-center md:items-start">
+<div class="w-14 h-14 bg-secondary-container/20 rounded-full flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined text-3xl">hub</span>
+</div>
+<div class="mb-2 inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-label-sm font-bold rounded-full">01 PHASE</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Generate</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Omnichannel lead acquisition utilizing hyper-targeted LinkedIn ads, high-intent SEO, and proprietary data mining to find your ideal buyer.</p>
+<ul class="space-y-2 w-full">
+<li class="flex items-center gap-2 text-body-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Search Arbitrage</li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Paid Social Retargeting</li>
+</ul>
+</div>
+<!-- Step 2: Qualify -->
+<div class="step-card bg-surface-container-lowest border border-outline-variant p-8 rounded-xl relative z-10 shadow-sm flex flex-col items-center md:items-start">
+<div class="w-14 h-14 bg-secondary-container/20 rounded-full flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<div class="mb-2 inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-label-sm font-bold rounded-full">02 PHASE</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Qualify</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">AI-driven lead scoring and behavioral analysis to separate window shoppers from ready-to-buy decision-makers.</p>
+<ul class="space-y-2 w-full">
+<li class="flex items-center gap-2 text-body-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Predictive Scoring</li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Firmographic Filtering</li>
+</ul>
+</div>
+<!-- Step 3: Nurture -->
+<div class="step-card bg-surface-container-lowest border border-outline-variant p-8 rounded-xl relative z-10 shadow-sm flex flex-col items-center md:items-start">
+<div class="w-14 h-14 bg-secondary-container/20 rounded-full flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined text-3xl">rocket_launch</span>
+</div>
+<div class="mb-2 inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-label-sm font-bold rounded-full">03 PHASE</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Nurture</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Multi-touch automated drip campaigns that deliver high-value authority content at precisely the right moment in the buyer's journey.</p>
+<ul class="space-y-2 w-full">
+<li class="flex items-center gap-2 text-body-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Email Personalization</li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> SMS Workflows</li>
+</ul>
+</div>
+<!-- Step 4: Convert -->
+<div class="step-card bg-primary-container border border-primary p-8 rounded-xl relative z-10 shadow-lg flex flex-col items-center md:items-start">
+<div class="w-14 h-14 bg-secondary-fixed-dim/20 rounded-full flex items-center justify-center mb-6 text-secondary-fixed">
+<span class="material-symbols-outlined text-3xl">trending_up</span>
+</div>
+<div class="mb-2 inline-block px-3 py-1 bg-secondary text-on-primary text-label-sm font-bold rounded-full">04 PHASE</div>
+<h3 class="font-headline-md text-headline-md text-white mb-4">Convert</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mb-6">Seamless handoff to your sales team with full lead intelligence or automated direct conversion for self-serve digital products.</p>
+<ul class="space-y-2 w-full">
+<li class="flex items-center gap-2 text-body-sm text-white"><span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Sales Handoff Sync</li>
+<li class="flex items-center gap-2 text-body-sm text-white"><span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> ROI Performance Tracking</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Why Partner With LeadsKE? -->
+<section class="bg-white border border-outline-variant rounded-2xl p-8 md:p-12 shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="relative h-[400px] rounded-xl overflow-hidden hidden md:block">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary-container to-secondary opacity-20 z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="A sophisticated B2B office setting with minimalist design, large windows showing a modern city skyline at dusk, and a clean marble boardroom table. The lighting is cool and professional, featuring deep indigo and slate blue tones with sharp cyan accents, reflecting a high-authority corporate aesthetic focused on growth and precision." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCh_GjIGy0K9fPEvHjTzHF9KjYpToiYX-tsgtu8X-fgKvUa_s0yWRyQXVAQP9lPcEJzc_HLzhyt94oQxVpiYfu_9D9A1mOekzy1fLpOS-HD7O8V3MAuEi9g5GkrE2m816lZIHE9QVQG1nnzz2q6XuCbvYEqyTHw6YFE7GFqRMt4oRU1DWxWqX_cHWQVWI7WflllEUQdOZqKUk1mTQtsRJVX8_aJGTV08CSKWzdZAai248DdD4xcd9SQp_vxsklaQi3eYdelEbQCG9s')"></div>
+<div class="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md p-6 rounded-lg z-20 border border-outline-variant">
+<p class="font-label-md text-secondary mb-1">Growth Metric</p>
+<p class="font-headline-md text-primary">+342% Avg. Pipeline Velocity</p>
+</div>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Why Partner With LeadsKE?</h2>
+<p class="font-body-md text-on-surface-variant mb-8">We don't just deliver leads; we build predictable, scalable revenue machines for the world's most ambitious B2B firms.</p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-6 h-6 bg-tertiary-fixed-dim/20 rounded-full flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary font-bold">Data-First Methodology</h4>
+<p class="font-body-sm text-on-surface-variant">Every campaign decision is backed by cross-platform behavioral data, not guesswork.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-6 h-6 bg-tertiary-fixed-dim/20 rounded-full flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary font-bold">Scalable Infrastructure</h4>
+<p class="font-body-sm text-on-surface-variant">Our systems grow with you, handling 10 leads or 10,000 without performance degradation.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-6 h-6 bg-tertiary-fixed-dim/20 rounded-full flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary font-bold">Performance Transparency</h4>
+<p class="font-body-sm text-on-surface-variant">Real-time reporting dashboards that show you exactly where your investment is working.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-6 h-6 bg-tertiary-fixed-dim/20 rounded-full flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary font-bold">Enterprise-Grade Security</h4>
+<p class="font-body-sm text-on-surface-variant">GDPR and CCPA compliant lead management protocols to protect your brand reputation.</p>
+</div>
+</div>
+</div>
+<a class="mt-10 bg-primary text-white font-label-md py-4 px-10 rounded-lg hover:shadow-lg transition-all flex items-center gap-2 group inline-flex justify-center" href="solutions.html#contact">
+                        Begin Your Growth Phase
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container relative w-full border-t border-outline-variant flex flex-col items-center gap-4 py-8 px-margin-mobile mb-20">
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">LeadsKE</h3>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">work.leadske.com</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">enrich.leadske.com</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">global.leadske.com</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-4 text-center">
+            © 2026 LeadsKE. All rights reserved. Managed by Kelvin Irungu.
+        </p>
+</footer>
+<!-- Bottom Navigation Bar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-2 px-4 bg-surface-container-lowest border-t border-outline-variant shadow-md z-50 rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant scale-95 active:scale-90 transition-transform" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant scale-95 active:scale-90 transition-transform" href="services.html">
+<span class="material-symbols-outlined">rocket_launch</span>
+<span class="font-label-sm text-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-container font-bold bg-secondary-container/20 rounded-full px-4 py-1 scale-95 active:scale-90 transition-transform" href="process.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+<span class="font-label-sm text-label-sm">Process</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant scale-95 active:scale-90 transition-transform" href="solutions.html">
+<span class="material-symbols-outlined">hub</span>
+<span class="font-label-sm text-label-sm">Solutions</span>
+</a>
+</nav>
+<script>
+        // Simple intersection observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.step-card').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

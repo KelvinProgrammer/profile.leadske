@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LeadsKE | Business Growth &amp; Lead Generation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#191c1e",
+                        "on-tertiary-fixed": "#002113",
+                        "inverse-on-surface": "#eff1f3",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-primary-container": "#7c839b",
+                        "surface-bright": "#f7f9fb",
+                        "on-surface-variant": "#45464d",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#004d6a",
+                        "tertiary-container": "#002113",
+                        "secondary": "#00668a",
+                        "surface-dim": "#d8dadc",
+                        "on-primary-fixed": "#131b2e",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e0e3e5",
+                        "tertiary": "#000000",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#c4e7ff",
+                        "primary-fixed": "#dae2fd",
+                        "secondary-container": "#40c2fd",
+                        "surface": "#f7f9fb",
+                        "primary": "#000000",
+                        "surface-container": "#eceef0",
+                        "surface-container-low": "#f2f4f6",
+                        "on-secondary-fixed-variant": "#004c69",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "primary-container": "#131b2e",
+                        "inverse-surface": "#2d3133",
+                        "outline-variant": "#c6c6cd",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed-dim": "#7bd0ff",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "outline": "#76777d",
+                        "surface-tint": "#565e74",
+                        "on-tertiary-container": "#009668",
+                        "inverse-primary": "#bec6e0",
+                        "primary-fixed-dim": "#bec6e0",
+                        "on-secondary-fixed": "#001e2c",
+                        "tertiary-fixed": "#6ffbbe",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f7f9fb",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e6e8ea"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-xl-mobile": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid #E2E8F0;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #0F172A 0%, #38BDF8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 z-50 w-full h-16 bg-surface border-b border-outline-variant shadow-sm flex items-center justify-between px-margin-mobile md:px-margin-desktop transition-colors duration-200 ease-in-out">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container flex items-center justify-center">
+<img alt="LeadsKE Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOp7r616bBRM8zGRyUbFjXD1chA-gx6F2Aco-MUlfxAS-OP71nasvDHcRdZ5ze-YOu4JTC9OYN-zANJdsgI6qaCJSO6Cf2KuU7QE5uym92kZG3rcEPv2DdhHDJ3aT38bJAf97VKk9bydJtZ4QtCIeTSP4fss666zWq8Eh2Sko4XGityOpDtBoQ-zY2p9QAGXNOLudVeX9eqZ06zMa2G61d-EWESALymrgSf1D3xFRKAwohCRl28Lhzf4JK4TBhulr2v61vW7ZRWXw"/>
+</div>
+<span class="font-headline-md text-headline-md-mobile md:text-headline-md font-bold text-on-surface">LeadsKE</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-secondary font-bold underline decoration-2 underline-offset-4" href="index.html">Home</a>
+<a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="services.html">Services</a>
+<a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="process.html">Process</a>
+<a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="solutions.html">Solutions</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary">more_vert</span>
+</button>
+</div>
+</header>
+<main class="pt-16 pb-24">
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-12 md:pt-24 pb-16 px-margin-mobile md:px-margin-desktop bg-surface-bright">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6 z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-label-sm font-label-md w-fit">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                        B2B Digital Authority
+                    </div>
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface max-w-xl">
+                        LeadsKE: Helping Businesses <span class="text-secondary">Generate</span>, Manage, and Convert.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Our integrated growth ecosystem empowers modern enterprises to capture high-intent leads and streamline the journey from first touch to final close.
+                    </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<a class="px-8 py-4 bg-primary text-on-primary rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all shadow-lg shadow-primary/10 inline-block text-center" href="solutions.html#contact">
+                            Get Started
+                        </a>
+<a class="px-8 py-4 bg-surface border border-outline-variant text-on-surface rounded-xl font-label-md text-label-md hover:bg-surface-container-low transition-all inline-block text-center" href="solutions.html">
+                            View Case Studies
+                        </a>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-secondary-container/20 blur-3xl rounded-full group-hover:bg-secondary-container/30 transition-all duration-700"></div>
+<div class="relative rounded-3xl overflow-hidden shadow-2xl border border-outline-variant/50">
+<img class="w-full aspect-[4/3] object-cover" data-alt="A sophisticated corporate office interior with clean minimalist architecture, large glass windows reflecting a blue-toned city skyline at dusk, and a high-tech digital display showing growth analytics and lead data visualizations in vibrant cyan and indigo. The lighting is professional, soft, and focused on the technological efficiency of a modern SaaS business headquarters." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_NPFgEhkIZJLQKEbLsPln7j8amKpVe9txQ2zKD-2zahG5mF2YegBwhqsBCmVMA5htmH6Yu_j1TZg7Nd2yGm8xX14dJUkD7OM4YeevzwBSMAY7yjiqX5RW5K3S4e_NLE-FUfNRZPZVTtzxyd_F18x7ARa6JnTarHra0fQ4lbfQUWzMrJ3bY3VC0lCA0RkzI145vR50jcF1E0De0fd3_jNSWAdwkWjHj8n1y2y79V5qMNxFH55pHV5uTSoKLPa1RNoakfa-MkWNmYM"/>
+<div class="absolute bottom-6 left-6 right-6 p-6 glass-card rounded-2xl flex items-center justify-between">
+<div>
+<p class="text-label-sm text-secondary font-bold uppercase tracking-widest">Active Results</p>
+<p class="text-headline-md font-bold text-on-surface">+124% Growth</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission Section (Asymmetric Bento Grid) -->
+<section class="py-20 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl-mobile md:font-headline-lg text-headline-xl-mobile md:text-headline-lg text-on-surface mb-4">
+                        Our Strategic Mission
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                        We don't just find leads; we architect the systems that turn strangers into loyal advocates. Scale your business with precision-engineered growth strategies.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Major Mission Card -->
+<div class="md:col-span-8 bg-primary-container rounded-3xl p-8 md:p-12 text-on-primary flex flex-col justify-between overflow-hidden relative group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-[80px] -mr-32 -mt-32 transition-all group-hover:bg-secondary/20"></div>
+<div class="z-10">
+<span class="material-symbols-outlined text-secondary-container text-5xl mb-6">rocket_launch</span>
+<h3 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl leading-tight mb-6">
+                                Generate More Leads. <br/>Close More Sales. <br/>Scale Faster.
+                            </h3>
+</div>
+<div class="flex items-center gap-4 z-10 pt-8 border-t border-on-primary-container/30">
+<div class="flex -space-x-3">
+<img class="w-10 h-10 rounded-full border-2 border-primary-container" data-alt="Close up professional portrait of a confident African business executive, neutral background, sharp focus, indigo business suit, professional soft lighting, corporate photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMeTpkau57If3jQTmWx6cUw47Zx2y7pvnb-vmd4ybV2KXzyl_-rzkHozKRkm_3zmgZChPYjdUZPsS4wNsBv-hqecRgGphngTft2Z93CIqq6x9T5DIeUJnjRCO1k0duXH-GXsX4LnF9aO6_grV-dkU5GmE-FFJucuguRDd5e_CuHdtZw6zyu5SHMMRfGPlyJ6yA6fskGtSMUGmtSp6GySQc0khvhLlRgIhTgE5zPI_bpoQWwm9-MoaAZxs9RS69CKhzsrkstUT99UM"/>
+<img class="w-10 h-10 rounded-full border-2 border-primary-container" data-alt="Professional headshot of a female marketing director, smiling, blurred modern office background, warm lighting, wearing professional slate blue attire, high quality digital photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG7OSLvY0TuKytlNA_dsz-8cjVChh9LM68Zec-1RNFCzcs0vMMZmv_j2Cq_4qGCfDDqtW6g3mU_8oArDTi_2cAWXgIds9iWKffvTkCACm6kcTgGET0MtdnIAduB_-3ll4S36PvZmU0o7x9k_SeJtIKiUlI2_h-pBfkrnhETYDsEAl20vhpFHx4twT9miGhBRgzURsWPL7sIEDuGosJpst-8Cu-RaUtK6tpWmB3SEKzwaXejnFBzNQ3fqUgDj1caiMDC3HvyEegFo8"/>
+<img class="w-10 h-10 rounded-full border-2 border-primary-container" data-alt="Portrait of a young tech entrepreneur, casual professional style, clean studio lighting, confident expression, minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2Ob_AlKuMS3vYqUKYdCrNoZfbxPADAMi0zD0Q-XFgk1BUljsQIZ-yfVRYeicO_kem9QS_r5Z3oG9gQ3gdVa7jYMYDiX5UkEBJabtUqJ70ffcx5hb6sD56zmf3DdDtVQA5EaZRrbJHhrt8dtTtNdbOu1efJo5uaOLHw738IDseW4cCYlt56sNfZ-D5j0rdImOfJpyqQlwXkyUeGKetJArULuFUdhmpCwUS0O_EvWFx7BagOm9rWuN_pkMM_DRvK21BdRlgkkM66MU"/>
+</div>
+<p class="text-label-sm font-label-md text-on-primary-container">Trusted by 500+ Industry Leaders</p>
+</div>
+</div>
+<!-- Small Mission Card 1 -->
+<div class="md:col-span-4 bg-surface-container-lowest border border-outline-variant rounded-3xl p-8 flex flex-col gap-4">
+<div class="w-12 h-12 bg-secondary-fixed text-on-secondary-fixed-variant rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Integrated Hub</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                             Consolidate all lead sources into a single, high-performance command center for your sales team.
+                        </p>
+<a class="mt-auto flex items-center gap-2 text-secondary font-label-md text-label-md hover:underline" href="solutions.html">
+                            Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Small Mission Card 2 -->
+<div class="md:col-span-4 bg-surface-container border border-outline-variant rounded-3xl p-8 flex flex-col gap-4">
+<div class="w-12 h-12 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Data-Driven</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                             Real-time analytics and predictive modeling to identify which leads are most likely to convert today.
+                        </p>
+</div>
+<!-- Medium Mission Card -->
+<div class="md:col-span-8 bg-secondary-container rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 group">
+<div class="flex-1">
+<h4 class="font-headline-lg text-headline-lg text-on-secondary-container mb-4">Unmatched Precision</h4>
+<p class="font-body-md text-body-md text-on-secondary-container/80 mb-6">
+                                Our proprietary conversion algorithms reduce cost-per-acquisition by an average of 34% in the first quarter of implementation.
+                            </p>
+<a class="bg-on-secondary-container text-white px-6 py-3 rounded-full font-label-md text-label-md inline-block text-center" href="solutions.html#contact">
+                                Analyze My Business
+                            </a>
+</div>
+<div class="w-full md:w-1/3 bg-white/20 backdrop-blur-md rounded-2xl p-4 border border-white/30 transform group-hover:-rotate-3 transition-transform">
+<div class="space-y-3">
+<div class="h-2 w-full bg-white/40 rounded-full"></div>
+<div class="h-2 w-3/4 bg-white/40 rounded-full"></div>
+<div class="h-2 w-1/2 bg-white/40 rounded-full"></div>
+<div class="h-8 w-full bg-white/60 rounded-lg mt-4"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Business Overview Section -->
+<section class="py-20 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto flex flex-col lg:flex-row gap-16 items-start">
+<div class="lg:sticky lg:top-24 lg:w-1/3">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Why LeadsKE?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Founded by Kelvin Irungu, LeadsKE was built on the principle that digital growth should be transparent, scalable, and relentlessly results-oriented.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 rounded-xl border border-outline-variant bg-surface-container-lowest">
+<div class="p-2 bg-secondary-container/20 rounded-lg">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+</div>
+<div>
+<p class="text-label-md font-bold text-on-surface">Verified Partner</p>
+<p class="text-body-sm text-on-surface-variant">Certified growth consultants</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-xl border border-outline-variant bg-surface-container-lowest">
+<div class="p-2 bg-secondary-container/20 rounded-lg">
+<span class="material-symbols-outlined text-secondary">speed</span>
+</div>
+<div>
+<p class="text-label-md font-bold text-on-surface">Rapid Launch</p>
+<p class="text-body-sm text-on-surface-variant">Systems live within 14 days</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-2/3 space-y-12">
+<div class="p-8 md:p-12 bg-white border border-outline-variant rounded-3xl shadow-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6">The Growth Partner Your Sales Team Deserves</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    We bridge the gap between marketing spend and tangible revenue. Many agencies stop at "clicks"—we follow the lead until the ink is dry on the contract. 
+                                </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    Our process integrates high-frequency content strategy with automated CRM workflows, ensuring no lead falls through the cracks.
+                                </p>
+</div>
+<div class="relative rounded-2xl overflow-hidden">
+<img class="w-full h-64 object-cover" data-alt="A macro shot of a sleek modern smartphone displaying a business dashboard with upward trending line graphs and success notifications. The background is a blurred high-end coffee shop with warm wood tones and sunlight, emphasizing the mobile-first growth accessibility of the LeadsKE platform. Minimalist indigo and cyan UI design elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYtY1kHkw_Y00WAXSYCyt7vHOwEz2SKHccYfqDVTovCRfA3oyna2Cy3ZUDoCA2ze6vCJddaUb2_TQ2NXi5gZuE2AZ7cyCZgW7Ve6cAqJy4aM60AmC3BXLFlQidNjRx3JbFJDWFAR2bQFo8KyrBuatprHl5Sj5Uq4HOEp3kM0p6PU5PgXB4zZ9u1MmO2kjVj-okqehxjrhxgw44LguLwQFA_u9eTMiQBfc0bEhVWqxTgzfQ_xfHPtkgZDAuL7A2lN8KPgJhxdPTRkc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<p class="text-white text-label-md font-bold">Real-time Lead Tracking</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="text-center p-6 bg-surface-container-high rounded-3xl border border-outline-variant">
+<p class="text-headline-xl font-bold text-secondary mb-2">12M+</p>
+<p class="text-label-sm font-label-md uppercase tracking-wider text-on-surface-variant">Leads Managed</p>
+</div>
+<div class="text-center p-6 bg-surface-container-high rounded-3xl border border-outline-variant">
+<p class="text-headline-xl font-bold text-secondary mb-2">450%</p>
+<p class="text-label-sm font-label-md uppercase tracking-wider text-on-surface-variant">Avg. ROI</p>
+</div>
+<div class="text-center p-6 bg-surface-container-high rounded-3xl border border-outline-variant">
+<p class="text-headline-xl font-bold text-secondary mb-2">24/7</p>
+<p class="text-label-sm font-label-md uppercase tracking-wider text-on-surface-variant">Automated Support</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-3xl mx-auto glass-card p-12 rounded-[2rem] border border-secondary/20 shadow-xl shadow-secondary/5">
+<h2 class="font-headline-xl-mobile md:font-headline-lg text-headline-xl-mobile md:text-headline-lg text-on-surface mb-6">Ready to Scale?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
+                    Transform your sales pipeline with LeadsKE's precision growth architecture. Join the elite businesses converting more every day.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="px-10 py-5 bg-primary text-white rounded-2xl font-label-md text-label-md hover:scale-105 transition-transform inline-block text-center" href="solutions.html#contact">Get a Free Growth Audit</a>
+<a class="px-10 py-5 bg-secondary text-on-secondary rounded-2xl font-label-md text-label-md hover:scale-105 transition-transform inline-block text-center" href="solutions.html#contact">Contact Sales</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="relative w-full bg-surface-container dark:bg-on-primary-container border-t border-outline-variant flex flex-col items-center gap-4 py-8 px-margin-mobile mb-16 md:mb-0">
+<div class="font-headline-sm text-headline-sm font-bold text-primary">LeadsKE</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">work.leadske.com</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">enrich.leadske.com</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">global.leadske.com</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center max-w-lg">
+            © 2026 LeadsKE. All rights reserved. Managed by Kelvin Irungu.
+        </p>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center py-2 px-4 bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant shadow-md rounded-t-xl z-50 md:hidden">
+<a class="flex flex-col items-center justify-center text-on-secondary-container font-bold bg-secondary-container/20 rounded-full px-4 py-1 scale-95 active:scale-90 transition-transform" href="index.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant scale-95 active:scale-90 transition-transform" href="services.html">
+<span class="material-symbols-outlined">rocket_launch</span>
+<span class="font-label-sm text-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant scale-95 active:scale-90 transition-transform" href="process.html">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="font-label-sm text-label-sm">Process</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant scale-95 active:scale-90 transition-transform" href="solutions.html">
+<span class="material-symbols-outlined">hub</span>
+<span class="font-label-sm text-label-sm">Solutions</span>
+</a>
+</nav>
+<!-- Desktop Navigation Side Dock (Hidden on Mobile) -->
+<div class="hidden md:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-4 z-40">
+<div class="glass-card p-3 rounded-full flex flex-col gap-4 shadow-xl">
+<a class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:scale-110 transition-transform" href="index.html" title="Home">
+<span class="material-symbols-outlined">home</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-all" href="services.html" title="Services">
+<span class="material-symbols-outlined">rocket_launch</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-all" href="process.html" title="Process">
+<span class="material-symbols-outlined">trending_up</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-all" href="solutions.html" title="Solutions">
+<span class="material-symbols-outlined">hub</span>
+</a>
+</div>
+</div>
+<script>
+        // Micro-interaction for scroll effects
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('bg-white/90', 'backdrop-blur-md');
+                header.classList.remove('bg-surface');
+            } else {
+                header.classList.remove('bg-white/90', 'backdrop-blur-md');
+                header.classList.add('bg-surface');
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | LeadsKE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#191c1e",
+                    "on-tertiary-fixed": "#002113",
+                    "inverse-on-surface": "#eff1f3",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "on-primary-container": "#7c839b",
+                    "surface-bright": "#f7f9fb",
+                    "on-surface-variant": "#45464d",
+                    "error-container": "#ffdad6",
+                    "on-secondary-container": "#004d6a",
+                    "tertiary-container": "#002113",
+                    "secondary": "#00668a",
+                    "surface-dim": "#d8dadc",
+                    "on-primary-fixed": "#131b2e",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e0e3e5",
+                    "tertiary": "#000000",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#c4e7ff",
+                    "primary-fixed": "#dae2fd",
+                    "secondary-container": "#40c2fd",
+                    "surface": "#f7f9fb",
+                    "primary": "#000000",
+                    "surface-container": "#eceef0",
+                    "surface-container-low": "#f2f4f6",
+                    "on-secondary-fixed-variant": "#004c69",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "primary-container": "#131b2e",
+                    "inverse-surface": "#2d3133",
+                    "outline-variant": "#c6c6cd",
+                    "on-surface": "#191c1e",
+                    "secondary-fixed-dim": "#7bd0ff",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "outline": "#76777d",
+                    "surface-tint": "#565e74",
+                    "on-tertiary-container": "#009668",
+                    "inverse-primary": "#bec6e0",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-secondary-fixed": "#001e2c",
+                    "tertiary-fixed": "#6ffbbe",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#f7f9fb",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#e6e8ea"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "base": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "margin-desktop": "48px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Inter"],
+                    "label-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "headline-xl-mobile": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #F8FAFC;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid #E2E8F0;
+        }
+        .pillar-card:hover .icon-bg {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .pillar-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .pillar-card:hover {
+            box-shadow: 0px 10px 15px -3px rgba(15, 23, 42, 0.08);
+            border-color: #38BDF8;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline shadow-sm docked full-width top-0 z-50 fixed w-full h-16 flex items-center justify-between px-margin-mobile md:px-margin-desktop">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container flex items-center justify-center">
+<img alt="LeadsKE Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOp7r616bBRM8zGRyUbFjXD1chA-gx6F2Aco-MUlfxAS-OP71nasvDHcRdZ5ze-YOu4JTC9OYN-zANJdsgI6qaCJSO6Cf2KuU7QE5uym92kZG3rcEPv2DdhHDJ3aT38bJAf97VKk9bydJtZ4QtCIeTSP4fss666zWq8Eh2Sko4XGityOpDtBoQ-zY2p9QAGXNOLudVeX9eqZ06zMa2G61d-EWESALymrgSf1D3xFRKAwohCRl28Lhzf4JK4TBhulr2v61vW7ZRWXw"/>
+</div>
+<span class="font-headline-md text-headline-md-mobile md:text-headline-md font-bold text-on-surface dark:text-inverse-on-surface">LeadsKE</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="index.html">Home</a>
+<a class="font-label-md text-secondary font-bold underline decoration-2 underline-offset-4" href="services.html">Services</a>
+<a class="font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="process.html">Process</a>
+<a class="font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="solutions.html">Solutions</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-surface-container-high dark:hover:bg-on-primary-container transition-colors duration-200">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed">more_vert</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Hero Section -->
+<section class="mb-12">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container/20 border border-secondary-container/30 rounded-full mb-4">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary">Our Capabilities</span>
+</div>
+<h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4 max-w-2xl">
+                Advanced Growth Infrastructure for B2B Scale
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+                We engineer end-to-end client acquisition pipelines using data-driven methodologies and high-performance outreach frameworks.
+            </p>
+</section>
+<!-- Bento Grid for Services -->
+<div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-gutter">
+<!-- Pillar 1: Lead Gen (Main Feature) -->
+<div class="pillar-card md:col-span-6 lg:col-span-8 bg-surface-container-lowest rounded-xl p-8 border border-outline-variant relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-secondary-container/10 to-transparent -mr-20 -mt-20 rounded-full"></div>
+<div class="relative z-10">
+<div class="icon-bg w-14 h-14 rounded-xl bg-primary text-white flex items-center justify-center mb-6 transition-transform">
+<span class="material-symbols-outlined text-[32px]">hub</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Lead Generation &amp; Data Enrichment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-lg">Advanced prospect identification and verification to ensure your sales team speaks only to decision-makers with high intent.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span> ICP &amp; Persona Development
+                            </li>
+<li class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span> Verified B2B Database Building
+                            </li>
+</ul>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span> Real-time Data Enrichment
+                            </li>
+<li class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span> Intent Signal Monitoring
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Pillar 2: Email Marketing -->
+<div class="pillar-card md:col-span-6 lg:col-span-4 bg-surface-container-lowest rounded-xl p-8 border border-outline-variant group">
+<div class="icon-bg w-12 h-12 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6 transition-transform">
+<span class="material-symbols-outlined">alternate_email</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Email Outreach</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">High-deliverability cold outreach systems and lead nurturing workflows.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">arrow_forward</span> Deliverability Optimization
+                    </li>
+<li class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">arrow_forward</span> Persuasive Copywriting
+                    </li>
+<li class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">arrow_forward</span> Multi-stage Sequences
+                    </li>
+</ul>
+</div>
+<!-- Pillar 3: Social Media -->
+<div class="pillar-card md:col-span-3 lg:col-span-4 bg-surface-container-lowest rounded-xl p-8 border border-outline-variant group">
+<div class="icon-bg w-12 h-12 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center mb-6 transition-transform">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Social Marketing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Strategic presence across LinkedIn and Twitter to build authority.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-surface-container rounded-lg text-[10px] font-bold uppercase tracking-wider">LinkedIn Ads</span>
+<span class="px-2 py-1 bg-surface-container rounded-lg text-[10px] font-bold uppercase tracking-wider">Content Calendar</span>
+<span class="px-2 py-1 bg-surface-container rounded-lg text-[10px] font-bold uppercase tracking-wider">Engagement</span>
+</div>
+</div>
+<!-- Pillar 4: SEO & Content -->
+<div class="pillar-card md:col-span-3 lg:col-span-4 bg-surface-container-lowest rounded-xl p-8 border border-outline-variant group">
+<div class="icon-bg w-12 h-12 rounded-lg bg-secondary-container/40 text-on-secondary-container flex items-center justify-center mb-6 transition-transform">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">SEO &amp; Content</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Dominating search results with conversion-focused content architecture.</p>
+<div class="w-full bg-surface-container h-1 rounded-full mb-4">
+<div class="bg-secondary h-full rounded-full" style="width: 85%"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant uppercase font-bold">Authority Ranking Growth</p>
+</div>
+<!-- Pillar 5: CRM & Automation -->
+<div class="pillar-card md:col-span-6 lg:col-span-4 bg-primary text-white rounded-xl p-8 border border-primary group relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+
+</div>
+<div class="relative z-10">
+<div class="icon-bg w-12 h-12 rounded-lg bg-white/20 backdrop-blur-md text-white flex items-center justify-center mb-6 transition-transform">
+<span class="material-symbols-outlined">settings_suggest</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-3">CRM &amp; Automation</h3>
+<p class="font-body-sm text-body-sm text-white/80 mb-6">Building the "Growth Engine" that connects marketing efforts to sales reality.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2 text-body-sm font-medium">
+<span class="material-symbols-outlined text-secondary-container text-lg">bolt</span> Hubspot &amp; Pipedrive Setup
+                        </li>
+<li class="flex items-center gap-2 text-body-sm font-medium">
+<span class="material-symbols-outlined text-secondary-container text-lg">bolt</span> Zapier Workflow Engineering
+                        </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<section class="mt-20 mb-12 p-10 bg-surface-container rounded-2xl flex flex-col md:flex-row items-center justify-between gap-8 border border-outline-variant">
+<div class="max-w-xl text-center md:text-left">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Ready to deploy your growth engine?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Schedule a capability audit with Kelvin Irungu today.</p>
+</div>
+<a class="bg-primary text-white px-8 py-4 rounded-xl font-label-md text-label-md hover:scale-105 active:scale-95 transition-all shadow-lg whitespace-nowrap inline-block text-center" href="solutions.html#contact">
+                Book a Strategy Call
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-on-primary-container text-on-surface dark:text-inverse-on-surface border-t border-outline-variant dark:border-outline relative w-full flex flex-col items-center gap-4 py-8 px-margin-mobile mb-20">
+<div class="flex flex-col items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">LeadsKE</span>
+<p class="font-body-sm text-body-sm opacity-80 text-center">© 2026 LeadsKE. All rights reserved. Managed by Kelvin Irungu.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">work.leadske.com</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">enrich.leadske.com</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">global.leadske.com</a>
+</div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline shadow-md fixed bottom-0 left-0 w-full flex justify-around items-center py-2 px-4 z-50 rounded-t-xl md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant transition-transform active:scale-90" href="index.html">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-container dark:text-secondary-fixed font-bold bg-secondary-container/20 dark:bg-on-secondary-container rounded-full px-4 py-1 scale-95 transition-transform" href="services.html">
+<span class="material-symbols-outlined" data-icon="rocket_launch" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+<span class="font-label-sm text-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant transition-transform active:scale-90" href="process.html">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+<span class="font-label-sm text-label-sm">Process</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant transition-transform active:scale-90" href="solutions.html">
+<span class="material-symbols-outlined" data-icon="hub">hub</span>
+<span class="font-label-sm text-label-sm">Solutions</span>
+</a>
+</nav>
+<!-- Desktop Sidebar/Nav (Hidden on Mobile) -->
+<div class="hidden md:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-6 z-40">
+<div class="w-1 bg-outline-variant h-32 rounded-full relative">
+<div class="absolute top-1/4 left-0 w-full h-8 bg-primary rounded-full transition-all"></div>
+</div>
+</div>
+<script>
+        // Micro-interaction for cards
+        document.querySelectorAll('.pillar-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>

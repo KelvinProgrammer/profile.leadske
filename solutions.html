@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LeadsKE | Platforms &amp; Solutions</title>
+<meta name="description" content="Explore specialized B2B growth and lead generation solutions for marketing agencies, hospitals, real estate, professional services, schools, tour & travel, and SMEs." />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#191c1e",
+                    "on-tertiary-fixed": "#002113",
+                    "inverse-on-surface": "#eff1f3",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "on-primary-container": "#7c839b",
+                    "surface-bright": "#f7f9fb",
+                    "on-surface-variant": "#45464d",
+                    "error-container": "#ffdad6",
+                    "on-secondary-container": "#004d6a",
+                    "tertiary-container": "#002113",
+                    "secondary": "#00668a",
+                    "surface-dim": "#d8dadc",
+                    "on-primary-fixed": "#131b2e",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e0e3e5",
+                    "tertiary": "#000000",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#c4e7ff",
+                    "primary-fixed": "#dae2fd",
+                    "secondary-container": "#40c2fd",
+                    "surface": "#f7f9fb",
+                    "primary": "#000000",
+                    "surface-container": "#eceef0",
+                    "surface-container-low": "#f2f4f6",
+                    "on-secondary-fixed-variant": "#004c69",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "primary-container": "#131b2e",
+                    "inverse-surface": "#2d3133",
+                    "outline-variant": "#c6c6cd",
+                    "on-surface": "#191c1e",
+                    "secondary-fixed-dim": "#7bd0ff",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "outline": "#76777d",
+                    "surface-tint": "#565e74",
+                    "on-tertiary-container": "#009668",
+                    "inverse-primary": "#bec6e0",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-secondary-fixed": "#001e2c",
+                    "tertiary-fixed": "#6ffbbe",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#f7f9fb",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#e6e8ea"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "base": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "margin-desktop": "48px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Inter"],
+                    "label-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "headline-xl-mobile": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .active-tab {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+            border-color: #000000 !important;
+        }
+        .dark .active-tab {
+            background-color: #ffffff !important;
+            color: #131b2e !important;
+            border-color: #ffffff !important;
+        }
+        .scrollbar-none::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-none {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .industry-panel {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline shadow-sm docked full-width top-0 z-50 flex items-center justify-between px-margin-mobile md:px-margin-desktop w-full h-16 fixed">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container flex items-center justify-center">
+<img alt="LeadsKE Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOp7r616bBRM8zGRyUbFjXD1chA-gx6F2Aco-MUlfxAS-OP71nasvDHcRdZ5ze-YOu4JTC9OYN-zANJdsgI6qaCJSO6Cf2KuU7QE5uym92kZG3rcEPv2DdhHDJ3aT38bJAf97VKk9bydJtZ4QtCIeTSP4fss666zWq8Eh2Sko4XGityOpDtBoQ-zY2p9QAGXNOLudVeX9eqZ06zMa2G61d-EWESALymrgSf1D3xFRKAwohCRl28Lhzf4JK4TBhulr2v61vW7ZRWXw"/>
+</div>
+<span class="font-headline-md text-headline-md-mobile font-bold text-on-surface dark:text-inverse-on-surface">LeadsKE</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="index.html">Home</a>
+<a class="font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="services.html">Services</a>
+<a class="font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="process.html">Process</a>
+<a class="font-label-md text-secondary font-bold underline decoration-2 underline-offset-4" href="solutions.html">Solutions</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="material-symbols-outlined text-primary dark:text-primary-fixed p-2 rounded-full hover:bg-surface-container-high transition-colors duration-200">
+            more_vert
+        </button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Section 1: Core Platforms -->
+<section class="mb-20">
+<div class="text-center mb-12">
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-4 text-on-background">Digital Growth Ecosystem</h1>
+<p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">Our proprietary platforms are engineered to provide specialized data intelligence across distinct business verticals.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Platform 1: Work -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">work</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">work.leadske.com</h3>
+<p class="text-body-md text-on-surface-variant mb-6 flex-grow">A high-precision database focusing on professional job market intelligence and executive placement signals.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-2 text-body-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">check_circle</span>
+<span>Real-time hiring intent monitoring</span>
+</li>
+<li class="flex items-start gap-2 text-body-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">check_circle</span>
+<span>Executive role transition tracking</span>
+</li>
+</ul>
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md py-3 px-6 rounded-lg hover:opacity-90 transition-opacity" href="https://work.leadske.com">Explore Work</a>
+</div>
+<!-- Platform 2: Enrich -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">enrich.leadske.com</h3>
+<p class="text-body-md text-on-surface-variant mb-6 flex-grow">Advanced lead enrichment and data cleaning services to maximize the ROI of your CRM and sales pipelines.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-2 text-body-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">check_circle</span>
+<span>Automated contact verification</span>
+</li>
+<li class="flex items-start gap-2 text-body-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">check_circle</span>
+</li>
+</ul>
+<a class="inline-flex items-center justify-center bg-secondary text-on-secondary font-label-md py-3 px-6 rounded-lg hover:opacity-90 transition-opacity" href="https://enrich.leadske.com">Optimize Data</a>
+</div>
+<!-- Platform 3: Global -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">public</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">global.leadske.com</h3>
+<p class="text-body-md text-on-surface-variant mb-6 flex-grow">Cross-border market intelligence for businesses looking to scale their operations beyond local jurisdictions.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-2 text-body-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">check_circle</span>
+<span>International firmographics analysis</span>
+</li>
+<li class="flex items-start gap-2 text-body-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">check_circle</span>
+<span>Global expansion lead signals</span>
+</li>
+</ul>
+<a class="inline-flex items-center justify-center border border-outline text-on-surface font-label-md py-3 px-6 rounded-lg hover:bg-surface-container-low transition-colors" href="https://global.leadske.com">Go Global</a>
+</div>
+</div>
+</section>
+<!-- Section 2: Specialized Industry Solutions -->
+<section class="mb-20">
+  <div class="text-center mb-10">
+    <span class="font-label-sm text-secondary uppercase tracking-widest mb-2 block">Specialized Solutions</span>
+    <h2 class="font-headline-lg text-headline-lg text-on-background">Growth Engines for Every Vertical</h2>
+    <p class="text-body-md text-on-surface-variant max-w-2xl mx-auto mt-2">
+      Select your industry vertical below to see how our proprietary data ecosystem can identify, enrich, and convert high-intent prospects.
+    </p>
+  </div>
+
+  <!-- Tab Menu -->
+  <div class="flex md:grid md:grid-cols-4 lg:grid-cols-8 gap-3 overflow-x-auto pb-4 md:pb-2 mb-10 scrollbar-none snap-x snap-mandatory px-4 md:px-0">
+    <!-- HR -->
+    <button onclick="switchIndustry('hr')" id="tab-hr" class="industry-tab snap-center shrink-0 flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest text-on-surface hover:border-secondary/50 hover:bg-surface-container-low transition-all duration-200 cursor-pointer font-label-md text-label-sm w-max md:w-auto active-tab">
+      <span class="material-symbols-outlined text-[18px]">work</span>
+      <span>HR & Recruitment</span>
+    </button>
+    <!-- Marketing -->
+    <button onclick="switchIndustry('marketing')" id="tab-marketing" class="industry-tab snap-center shrink-0 flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest text-on-surface hover:border-secondary/50 hover:bg-surface-container-low transition-all duration-200 cursor-pointer font-label-md text-label-sm w-max md:w-auto">
+      <span class="material-symbols-outlined text-[18px]">campaign</span>
+      <span>Marketing</span>
+    </button>
+    <!-- Hospitals -->
+    <button onclick="switchIndustry('hospitals')" id="tab-hospitals" class="industry-tab snap-center shrink-0 flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest text-on-surface hover:border-secondary/50 hover:bg-surface-container-low transition-all duration-200 cursor-pointer font-label-md text-label-sm w-max md:w-auto">
+      <span class="material-symbols-outlined text-[18px]">local_hospital</span>
+      <span>Hospitals</span>
+    </button>
+    <!-- Real Estate -->
+    <button onclick="switchIndustry('realestate')" id="tab-realestate" class="industry-tab snap-center shrink-0 flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest text-on-surface hover:border-secondary/50 hover:bg-surface-container-low transition-all duration-200 cursor-pointer font-label-md text-label-sm w-max md:w-auto">
+      <span class="material-symbols-outlined text-[18px]">real_estate_agent</span>
+      <span>Real Estate</span>
+    </button>
+    <!-- Professionals -->
+    <button onclick="switchIndustry('professionals')" id="tab-professionals" class="industry-tab snap-center shrink-0 flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest text-on-surface hover:border-secondary/50 hover:bg-surface-container-low transition-all duration-200 cursor-pointer font-label-md text-label-sm w-max md:w-auto">
+      <span class="material-symbols-outlined text-[18px]">gavel</span>
+      <span>Professionals</span>
+    </button>
+    <!-- SMEs -->
+    <button onclick="switchIndustry('smes')" id="tab-smes" class="industry-tab snap-center shrink-0 flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest text-on-surface hover:border-secondary/50 hover:bg-surface-container-low transition-all duration-200 cursor-pointer font-label-md text-label-sm w-max md:w-auto">
+      <span class="material-symbols-outlined text-[18px]">store</span>
+      <span>SMEs</span>
+    </button>
+    <!-- Schools -->
+    <button onclick="switchIndustry('schools')" id="tab-schools" class="industry-tab snap-center shrink-0 flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest text-on-surface hover:border-secondary/50 hover:bg-surface-container-low transition-all duration-200 cursor-pointer font-label-md text-label-sm w-max md:w-auto">
+      <span class="material-symbols-outlined text-[18px]">school</span>
+      <span>Schools</span>
+    </button>
+    <!-- Travel -->
+    <button onclick="switchIndustry('travel')" id="tab-travel" class="industry-tab snap-center shrink-0 flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest text-on-surface hover:border-secondary/50 hover:bg-surface-container-low transition-all duration-200 cursor-pointer font-label-md text-label-sm w-max md:w-auto">
+      <span class="material-symbols-outlined text-[18px]">flight_takeoff</span>
+      <span>Tour & Travel</span>
+    </button>
+  </div>
+
+  <!-- Bento Grid Container Panels -->
+  <div class="relative min-h-[500px]">
+    
+    <!-- 1. HR & Recruitment Panel -->
+    <div id="panel-hr" class="industry-panel grid grid-cols-1 md:grid-cols-12 gap-6 opacity-100 translate-y-0 transition-all duration-300">
+      <div class="col-span-12 mb-2">
+        <p class="text-body-lg text-on-surface-variant max-w-3xl">We provide recruitment professionals with actionable intelligence to outpace the competition and secure the best mandates.</p>
+      </div>
+      
+      <div class="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline-variant h-80">
+        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="A sophisticated office environment with blurred professional figures in the background" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8 text-on-primary">
+          <h3 class="font-headline-md text-headline-md mb-2">Companies That Are Hiring</h3>
+          <p class="text-body-md opacity-90 max-w-md">Access daily updated lists of organizations with active, high-volume recruitment cycles and new department formation.</p>
+          <div class="mt-4 flex gap-4">
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Real-time Signals</span>
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Department Insights</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="md:col-span-4 bg-surface-container-high border border-outline-variant rounded-xl p-8 flex flex-col justify-center">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4">business_center</span>
+        <h3 class="font-headline-md text-headline-md mb-3">SMEs Requiring HR Outsourcing</h3>
+        <p class="text-body-sm text-on-surface-variant mb-6">Identify rapidly growing small-to-medium enterprises that lack internal HR infrastructure but are reaching critical headcount thresholds.</p>
+        <a href="#contact" class="flex items-center gap-2 font-label-md text-secondary group">
+          View Lead Samples
+          <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+      
+      <div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between">
+        <div class="text-headline-xl font-bold">24%</div>
+        <div class="mt-4">
+          <div class="bg-on-tertiary-container/20 text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-label-sm inline-block mb-2">+ Growth</div>
+          <p class="font-headline-sm text-headline-sm">Conversion Boost</p>
+          <p class="text-body-sm opacity-70 mt-2">Average increase in client acquisition for recruitment firms using our intent signals.</p>
+        </div>
+      </div>
+      
+      <div class="md:col-span-8 border border-outline-variant rounded-xl p-8 flex flex-col justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 h-full items-center">
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">trending_up</span>
+              Scale Operations
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Identify high-growth startups before they reach out to legacy recruiters.</p>
+          </div>
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">hub</span>
+              Targeted Networks
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Deep-dive into industry-specific professional nodes and talent clusters.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Marketing Agencies Panel -->
+    <div id="panel-marketing" class="industry-panel hidden absolute inset-x-0 top-0 grid grid-cols-1 md:grid-cols-12 gap-6 opacity-0 translate-y-4 transition-all duration-300">
+      <div class="col-span-12 mb-2">
+        <p class="text-body-lg text-on-surface-variant max-w-3xl">Empower your agency with white-label lead enrichment and outbound data to scale client campaigns and secure high-value retainer clients.</p>
+      </div>
+      
+      <div class="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline-variant h-80">
+        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Marketing analysts reviewing digital analytics dashboard" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8 text-on-primary">
+          <h3 class="font-headline-md text-headline-md mb-2">Enriched Audience Segments</h3>
+          <p class="text-body-md opacity-90 max-w-md">Extract custom B2B database building files containing 45+ B2B data points to feed your clients' outbound marketing campaigns.</p>
+          <div class="mt-4 flex gap-4">
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">45+ Firmographics</span>
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Verified Emails</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="md:col-span-4 bg-surface-container-high border border-outline-variant rounded-xl p-8 flex flex-col justify-center">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4">cleaning_services</span>
+        <h3 class="font-headline-md text-headline-md mb-3">Automated List Cleaning</h3>
+        <p class="text-body-sm text-on-surface-variant mb-6">Clean client databases automatically to ensure 99%+ deliverability and protect critical domain send scores.</p>
+        <a href="#contact" class="flex items-center gap-2 font-label-md text-secondary group">
+          Get White-Label Audit
+          <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+      
+      <div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between">
+        <div class="text-headline-xl font-bold">3.2x</div>
+        <div class="mt-4">
+          <div class="bg-on-tertiary-container/20 text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-label-sm inline-block mb-2">+ ROI</div>
+          <p class="font-headline-sm text-headline-sm">Client Retainer Growth</p>
+          <p class="text-body-sm opacity-70 mt-2">Average increase in client campaign yield achieved by agencies using enriched B2B databases.</p>
+        </div>
+      </div>
+      
+      <div class="md:col-span-8 border border-outline-variant rounded-xl p-8 flex flex-col justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 h-full items-center">
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">workspace_premium</span>
+              White-Label Data
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Deliver high-quality B2B lists directly under your own agency branding and portal.</p>
+          </div>
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">mail_lock</span>
+              Domain Safety Check
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Continuous inbox health monitoring so campaigns never end up in the spam folder.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Hospitals & Healthcare Panel -->
+    <div id="panel-hospitals" class="industry-panel hidden absolute inset-x-0 top-0 grid grid-cols-1 md:grid-cols-12 gap-6 opacity-0 translate-y-4 transition-all duration-300">
+      <div class="col-span-12 mb-2">
+        <p class="text-body-lg text-on-surface-variant max-w-3xl">Streamline patient patient intake pipelines, manage specialist referrals, and secure healthcare equipment contract leads in compliance with local regulations.</p>
+      </div>
+      
+      <div class="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline-variant h-80">
+        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Modern clean clinical healthcare environment" src="https://images.unsplash.com/photo-1584515901387-a7a1a63376af?auto=format&fit=crop&w=800&q=80"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8 text-on-primary">
+          <h3 class="font-headline-md text-headline-md mb-2">Referral Network Builder</h3>
+          <p class="text-body-md opacity-90 max-w-md">Connect your specialty clinics with primary care provider clinics and medical practitioners across the region.</p>
+          <div class="mt-4 flex gap-4">
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Clinician Databases</span>
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Geo-Mapping</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="md:col-span-4 bg-surface-container-high border border-outline-variant rounded-xl p-8 flex flex-col justify-center">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4">medical_services</span>
+        <h3 class="font-headline-md text-headline-md mb-3">Equipment Contract Signals</h3>
+        <p class="text-body-sm text-on-surface-variant mb-6">Track public and private clinic expansion cycles looking for high-end diagnostic and surgical equipment.</p>
+        <a href="#contact" class="flex items-center gap-2 font-label-md text-secondary group">
+          Request Hospital Demo
+          <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+      
+      <div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between">
+        <div class="text-headline-xl font-bold">-40%</div>
+        <div class="mt-4">
+          <div class="bg-on-tertiary-container/20 text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-label-sm inline-block mb-2">- Friction</div>
+          <p class="font-headline-sm text-headline-sm">Patient Intake Friction</p>
+          <p class="text-body-sm opacity-70 mt-2">Average reduction in specialist appointment scheduling delays and drop-offs.</p>
+        </div>
+      </div>
+      
+      <div class="md:col-span-8 border border-outline-variant rounded-xl p-8 flex flex-col justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 h-full items-center">
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">verified_user</span>
+              Compliant Security
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Patient lead intake systems designed with local and international healthcare privacy compliance.</p>
+          </div>
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">analytics</span>
+              Patient Experience Insights
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Monitor and analyze local feedback loops to improve clinic service ranking metrics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Real Estate Panel -->
+    <div id="panel-realestate" class="industry-panel hidden absolute inset-x-0 top-0 grid grid-cols-1 md:grid-cols-12 gap-6 opacity-0 translate-y-4 transition-all duration-300">
+      <div class="col-span-12 mb-2">
+        <p class="text-body-lg text-on-surface-variant max-w-3xl">Capture high-intent buyers, identify motivated commercial property sellers, and build relationships with real estate investors before they hit the market.</p>
+      </div>
+      
+      <div class="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline-variant h-80">
+        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Modern luxury architectural real estate villa" src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8 text-on-primary">
+          <h3 class="font-headline-md text-headline-md mb-2">Motivated Seller Tracking</h3>
+          <p class="text-body-md opacity-90 max-w-md">Track planning applications, zoning request alerts, and property transition indicators to secure off-market listing inventory.</p>
+          <div class="mt-4 flex gap-4">
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Zoning Alerts</span>
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Property Intent</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="md:col-span-4 bg-surface-container-high border border-outline-variant rounded-xl p-8 flex flex-col justify-center">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4">home_work</span>
+        <h3 class="font-headline-md text-headline-md mb-3">Investor Network Mapping</h3>
+        <p class="text-body-sm text-on-surface-variant mb-6">Build dynamic connections with corporate property buying funds and high-net-worth real estate buyers.</p>
+        <a href="#contact" class="flex items-center gap-2 font-label-md text-secondary group">
+          Get Real Estate Leads
+          <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+      
+      <div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between">
+        <div class="text-headline-xl font-bold">+38%</div>
+        <div class="mt-4">
+          <div class="bg-on-tertiary-container/20 text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-label-sm inline-block mb-2">+ Velocity</div>
+          <p class="font-headline-sm text-headline-sm">Listing Velocity</p>
+          <p class="text-body-sm opacity-70 mt-2">Average reduction in time-to-close for commercial properties using target buyer intent data.</p>
+        </div>
+      </div>
+      
+      <div class="md:col-span-8 border border-outline-variant rounded-xl p-8 flex flex-col justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 h-full items-center">
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">holiday_village</span>
+              Commercial Relocation
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Identify companies growing headcount and approaching lease expiration cycles.</p>
+          </div>
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">explore</span>
+              Growth Corridors
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Pinpoint geographical locations with rising commercial and residential investment activities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Professionals Panel -->
+    <div id="panel-professionals" class="industry-panel hidden absolute inset-x-0 top-0 grid grid-cols-1 md:grid-cols-12 gap-6 opacity-0 translate-y-4 transition-all duration-300">
+      <div class="col-span-12 mb-2">
+        <p class="text-body-lg text-on-surface-variant max-w-3xl">Target companies navigating complex regulatory changes, corporate restructuring, or tax season transitions requiring professional advisory.</p>
+      </div>
+      
+      <div class="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline-variant h-80">
+        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Corporate professional courtroom meeting scales of justice gavel" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8 text-on-primary">
+          <h3 class="font-headline-md text-headline-md mb-2">Regulatory Trigger Alerts</h3>
+          <p class="text-body-md opacity-90 max-w-md">Track corporate regulatory filing alerts, compliance defaults, or legal policy changes that require immediate advisory consulting.</p>
+          <div class="mt-4 flex gap-4">
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Filing Defaults</span>
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Tax Restructuring</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="md:col-span-4 bg-surface-container-high border border-outline-variant rounded-xl p-8 flex flex-col justify-center">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4">domain_verification</span>
+        <h3 class="font-headline-md text-headline-md mb-3">Executive Compliance Signals</h3>
+        <p class="text-body-sm text-on-surface-variant mb-6">Identify newly incorporated entities in need of compliance setup, corporate bookkeeping, or legal structures.</p>
+        <a href="#contact" class="flex items-center gap-2 font-label-md text-secondary group">
+          Connect with Partners
+          <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+      
+      <div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between">
+        <div class="text-headline-xl font-bold">+28%</div>
+        <div class="mt-4">
+          <div class="bg-on-tertiary-container/20 text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-label-sm inline-block mb-2">+ Retainers</div>
+          <p class="font-headline-sm text-headline-sm">Client Retainer Growth</p>
+          <p class="text-body-sm opacity-70 mt-2">Average recurring client growth rate for law, tax, and accounting firms using strategic alert signals.</p>
+        </div>
+      </div>
+      
+      <div class="md:col-span-8 border border-outline-variant rounded-xl p-8 flex flex-col justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 h-full items-center">
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">handshake</span>
+              M&A Intent Signals
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Identify growing mid-market companies actively restructuring or indicating merger intent.</p>
+          </div>
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">lock</span>
+              IP Protection Triggers
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Monitor domain registrations and trademark applications to identify brand protection sales leads.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. SMEs & Startups Panel -->
+    <div id="panel-smes" class="industry-panel hidden absolute inset-x-0 top-0 grid grid-cols-1 md:grid-cols-12 gap-6 opacity-0 translate-y-4 transition-all duration-300">
+      <div class="col-span-12 mb-2">
+        <p class="text-body-lg text-on-surface-variant max-w-3xl">Affordable, automated outbound lead generation systems that help small and medium businesses compete with enterprise budgets.</p>
+      </div>
+      
+      <div class="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline-variant h-80">
+        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Start up SME team discussing sales conversion on whiteboard" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8 text-on-primary">
+          <h3 class="font-headline-md text-headline-md mb-2">All-in-One Outbound Hub</h3>
+          <p class="text-body-md opacity-90 max-w-md">Launch campaigns with easy-to-use email lists and phone outreach lists tailored specifically to your target local customers.</p>
+          <div class="mt-4 flex gap-4">
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Local Leads</span>
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Affordable Pricing</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="md:col-span-4 bg-surface-container-high border border-outline-variant rounded-xl p-8 flex flex-col justify-center">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4">storefront</span>
+        <h3 class="font-headline-md text-headline-md mb-3">Local Business Directory</h3>
+        <p class="text-body-sm text-on-surface-variant mb-6">Gain direct access to clean business contact details for local service providers, suppliers, and prospective corporate buyers.</p>
+        <a href="#contact" class="flex items-center gap-2 font-label-md text-secondary group">
+          Start Lead Audit
+          <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+      
+      <div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between">
+        <div class="text-headline-xl font-bold">5x</div>
+        <div class="mt-4">
+          <div class="bg-on-tertiary-container/20 text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-label-sm inline-block mb-2">+ Pipeline</div>
+          <p class="font-headline-sm text-headline-sm">Lead Pipeline Growth</p>
+          <p class="text-body-sm opacity-70 mt-2">Average increase in monthly qualified business opportunities for small businesses.</p>
+        </div>
+      </div>
+      
+      <div class="md:col-span-8 border border-outline-variant rounded-xl p-8 flex flex-col justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 h-full items-center">
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">sync</span>
+              Direct CRM Push
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Push high-intent prospects straight to CRM software like Zoho, HubSpot, or sheet databases automatically.</p>
+          </div>
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">payment</span>
+              Pay-As-You-Grow
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Flexible lead plans scale with your company size without locking you into complex long-term retainers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Schools & Institutions Panel -->
+    <div id="panel-schools" class="industry-panel hidden absolute inset-x-0 top-0 grid grid-cols-1 md:grid-cols-12 gap-6 opacity-0 translate-y-4 transition-all duration-300">
+      <div class="col-span-12 mb-2">
+        <p class="text-body-lg text-on-surface-variant max-w-3xl">Empower academic institutions, training academies, and universities to attract prospective students and connect with corporate sponsors.</p>
+      </div>
+      
+      <div class="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline-variant h-80">
+        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Clean university campus architecture with students walking in background" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8 text-on-primary">
+          <h3 class="font-headline-md text-headline-md mb-2">Corporate Education Partnerships</h3>
+          <p class="text-body-md opacity-90 max-w-md">Identify and connect with regional Human Resource directors seeking executive training and certified upskilling programs for their staff.</p>
+          <div class="mt-4 flex gap-4">
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Upskilling Leads</span>
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">B2B HR Contacts</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="md:col-span-4 bg-surface-container-high border border-outline-variant rounded-xl p-8 flex flex-col justify-center">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4">school</span>
+        <h3 class="font-headline-md text-headline-md mb-3">Student Enrollment Signals</h3>
+        <p class="text-body-sm text-on-surface-variant mb-6">Target prospective students researching higher education programs and vocational certifications.</p>
+        <a href="#contact" class="flex items-center gap-2 font-label-md text-secondary group">
+          Request Enrollment Strategy
+          <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+      
+      <div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between">
+        <div class="text-headline-xl font-bold">+42%</div>
+        <div class="mt-4">
+          <div class="bg-on-tertiary-container/20 text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-label-sm inline-block mb-2">+ Enrollment</div>
+          <p class="font-headline-sm text-headline-sm">Enrollment Growth</p>
+          <p class="text-body-sm opacity-70 mt-2">Average increase in qualified program applications for participating academic institutions.</p>
+        </div>
+      </div>
+      
+      <div class="md:col-span-8 border border-outline-variant rounded-xl p-8 flex flex-col justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 h-full items-center">
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">volunteer_activism</span>
+              Research Funding Leads
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Track public and corporate grant calls, corporate research sponsorships, and institutional funding opportunities.</p>
+          </div>
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">diversity_3</span>
+              Alumni Intelligence
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Update and enrich alumni databases to drive donations and mentor participation rates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Tour & Travel Companies Panel -->
+    <div id="panel-travel" class="industry-panel hidden absolute inset-x-0 top-0 grid grid-cols-1 md:grid-cols-12 gap-6 opacity-0 translate-y-4 transition-all duration-300">
+      <div class="col-span-12 mb-2">
+        <p class="text-body-lg text-on-surface-variant max-w-3xl">Target corporate retreats, international school trips, luxury leisure travelers, and local holiday booking intent groups.</p>
+      </div>
+      
+      <div class="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline-variant h-80">
+        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Scenic travel destination planning table with map passport and camera" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8 text-on-primary">
+          <h3 class="font-headline-md text-headline-md mb-2">Corporate Offsites &amp; Retreats</h3>
+          <p class="text-body-md opacity-90 max-w-md">Track growing companies planning annual team-building events, employee retreats, or regional executive meetings.</p>
+          <div class="mt-4 flex gap-4">
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Retreat Intent</span>
+            <span class="bg-secondary-container/30 backdrop-blur-sm px-3 py-1 rounded-full text-label-sm border border-secondary-container/50">Corporate Budgets</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="md:col-span-4 bg-surface-container-high border border-outline-variant rounded-xl p-8 flex flex-col justify-center">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4">luggage</span>
+        <h3 class="font-headline-md text-headline-md mb-3">Luxury Travel Networks</h3>
+        <p class="text-body-sm text-on-surface-variant mb-6">Target expat residential clusters and high-income executive professionals search trends for travel deals.</p>
+        <a href="#contact" class="flex items-center gap-2 font-label-md text-secondary group">
+          Connect with Travel Leads
+          <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+      
+      <div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between">
+        <div class="text-headline-xl font-bold">+55%</div>
+        <div class="mt-4">
+          <div class="bg-on-tertiary-container/20 text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-label-sm inline-block mb-2">+ Bookings</div>
+          <p class="font-headline-sm text-headline-sm">Booking Volume Boost</p>
+          <p class="text-body-sm opacity-70 mt-2">Average increase in custom group booking inquiries achieved by tour agencies using targeted intent data.</p>
+        </div>
+      </div>
+      
+      <div class="md:col-span-8 border border-outline-variant rounded-xl p-8 flex flex-col justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 h-full items-center">
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">explore</span>
+              Seasonal Demand
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Identify and capture regional travel demand spikes before peak holidays hit.</p>
+          </div>
+          <div>
+            <h4 class="font-label-md text-primary mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">school</span>
+              Academic Travel
+            </h4>
+            <p class="text-body-sm text-on-surface-variant">Target international and private school trip directors planning annual study excursions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Contact Section -->
+<section class="bg-surface-container-low border border-outline-variant rounded-2xl p-8 md:p-16 mb-12 relative overflow-hidden" id="contact">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary-container/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h2 class="font-headline-lg text-headline-lg mb-6">Ready to scale your lead generation?</h2>
+<p class="text-body-lg text-on-surface-variant mb-8">Connect with our leadership team for a tailored walkthrough of our data ecosystem and how it can serve your specific growth objectives.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary">person</span>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant">Director</p>
+<p class="font-headline-sm text-headline-sm">Kelvin Irungu</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary">mail</span>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant">Official Inquiry</p>
+<a class="font-headline-sm text-headline-sm hover:text-secondary transition-colors" href="mailto:info@leadske.com">info@leadske.com</a>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-96 glass-card p-8 rounded-xl border border-white/50 shadow-xl">
+<form class="space-y-4">
+<div>
+<label class="block font-label-sm mb-1 text-on-surface">Full Name</label>
+<input class="w-full bg-white border border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm mb-1 text-on-surface">Company Email</label>
+<input class="w-full bg-white border border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm mb-1 text-on-surface">Message</label>
+<textarea class="w-full bg-white border border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" rows="3"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-label-md hover:scale-[0.98] transition-transform" type="submit">Send Consultation Request</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-on-primary-container border-t border-outline-variant dark:border-outline flex flex-col items-center gap-4 py-8 px-margin-mobile mb-20 md:mb-0 relative w-full">
+<div class="font-headline-sm text-headline-sm font-bold text-primary">LeadsKE</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-opacity" href="https://work.leadske.com">work.leadske.com</a>
+<a class="font-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-opacity" href="https://enrich.leadske.com">enrich.leadske.com</a>
+<a class="font-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-opacity" href="https://global.leadske.com">global.leadske.com</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface dark:text-inverse-on-surface text-center opacity-80">
+            © 2026 LeadsKE. All rights reserved. Managed by Kelvin Irungu.
+        </p>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-2 px-4 bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline shadow-md z-50 rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant scale-95 active:scale-90 transition-transform" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant scale-95 active:scale-90 transition-transform" href="services.html">
+<span class="material-symbols-outlined">rocket_launch</span>
+<span class="font-label-sm text-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant scale-95 active:scale-90 transition-transform" href="process.html">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="font-label-sm text-label-sm">Process</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-container dark:text-secondary-fixed font-bold bg-secondary-container/20 dark:bg-on-secondary-container rounded-full px-4 py-1 scale-95 active:scale-90 transition-transform" href="solutions.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">hub</span>
+<span class="font-label-sm text-label-sm">Solutions</span>
+</a>
+</nav>
+<!-- Desktop Navigation Side Dock (Hidden on Mobile) -->
+<div class="hidden md:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-4 z-40">
+<div class="glass-card p-3 rounded-full flex flex-col gap-4 shadow-xl">
+<a class="w-10 h-10 rounded-full bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-all" href="index.html" title="Home">
+<span class="material-symbols-outlined">home</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-all" href="services.html" title="Services">
+<span class="material-symbols-outlined">rocket_launch</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-all" href="process.html" title="Process">
+<span class="material-symbols-outlined">trending_up</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:scale-110 transition-transform" href="solutions.html" title="Solutions">
+<span class="material-symbols-outlined">hub</span>
+</a>
+</div>
+</div>
+<script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple form interaction
+        const form = document.querySelector('form');
+        if(form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = form.querySelector('button');
+                btn.innerHTML = 'Sending...';
+                btn.classList.add('opacity-50');
+                setTimeout(() => {
+                    btn.innerHTML = 'Request Received';
+                    btn.classList.replace('bg-primary', 'bg-on-tertiary-container');
+                    form.reset();
+                }, 1500);
+            });
+        }
+
+        // Industry switcher logic
+        function switchIndustry(industryId) {
+            // Hide all panels
+            document.querySelectorAll('.industry-panel').forEach(panel => {
+                panel.classList.add('hidden');
+                panel.classList.remove('opacity-100', 'translate-y-0');
+                panel.classList.add('opacity-0', 'translate-y-4');
+            });
+
+            // Deactivate all tabs
+            document.querySelectorAll('.industry-tab').forEach(tab => {
+                tab.classList.remove('bg-primary', 'text-on-primary', 'border-primary', 'active-tab');
+                tab.classList.add('bg-surface-container-lowest', 'text-on-surface', 'border-outline-variant');
+            });
+
+            // Activate selected tab
+            const activeTab = document.getElementById(`tab-${industryId}`);
+            if (activeTab) {
+                activeTab.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'border-outline-variant');
+                activeTab.classList.add('bg-primary', 'text-on-primary', 'border-primary', 'active-tab');
+            }
+
+            // Show selected panel
+            const activePanel = document.getElementById(`panel-${industryId}`);
+            if (activePanel) {
+                activePanel.classList.remove('hidden');
+                setTimeout(() => {
+                    activePanel.classList.remove('opacity-0', 'translate-y-4');
+                    activePanel.classList.add('opacity-100', 'translate-y-0');
+                }, 50);
+            }
+        }
+    </script>
+</body></html>
