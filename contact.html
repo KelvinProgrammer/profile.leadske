@@ -225,9 +225,12 @@
                 </div>
 
                 <!-- Error Alert (Hidden initially) -->
-                <div id="error-alert" class="hidden mb-6 p-4 bg-error-container text-on-error-container rounded-xl flex items-center gap-3 border border-error/20">
-                    <span class="material-symbols-outlined text-error text-xl">error</span>
-                    <p class="text-sm font-medium" id="error-message">Something went wrong. Please check your network and try again.</p>
+                <div id="error-alert" class="hidden mb-6 p-4 bg-error-container text-on-error-container rounded-xl flex flex-col items-start gap-3 border border-error/20">
+                    <div class="flex items-center gap-3 w-full">
+                        <span class="material-symbols-outlined text-error text-xl">error</span>
+                        <p class="text-sm font-medium" id="error-message">Something went wrong. Please check your network and try again.</p>
+                    </div>
+                    <pre id="error-details" class="hidden w-full mt-2 p-3 bg-white/5 rounded text-xs overflow-auto whitespace-pre-wrap"></pre>
                 </div>
 
                 <form id="contact-form" class="space-y-6">
@@ -357,11 +360,13 @@
     const successAlert = document.getElementById('success-alert');
     const errorAlert = document.getElementById('error-alert');
     const errorMessage = document.getElementById('error-message');
+    const errorDetails = document.getElementById('error-details');
 
     // Auto-detect the API endpoint (local testing vs production)
     const getApiUrl = () => {
         const host = window.location.hostname;
-        if (host === 'localhost' || host === '127.0.0.1') {
+        const protocol = window.location.protocol;
+        if (host === 'localhost' || host === '127.0.0.1' || !host || protocol === 'file:') {
             return 'http://localhost:3000/api/inquiry';
         }
         return 'https://global.leadske.com/api/inquiry';
@@ -397,9 +402,18 @@
                 body: JSON.stringify(payload)
             });
 
-            const result = await response.json();
+            // Read response as text first to avoid crashing on non-JSON responses
+            let result = {};
+            const raw = await response.text();
+            try {
+                result = raw ? JSON.parse(raw) : {};
+            } catch (parseError) {
+                console.warn('Could not parse JSON response:', parseError, 'raw response:', raw);
+                // If the server returned plain text or HTML, use it as the error message
+                result = { error: raw || response.statusText };
+            }
 
-            if (response.ok && result.success) {
+            if (response.ok && (result.success || result.status === 'ok')) {
                 // Show success message and clear form
                 successAlert.classList.remove('hidden');
                 form.reset();
@@ -407,13 +421,24 @@
                 successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
             } else {
                 // Show API error
-                errorMessage.textContent = result.error || 'Failed to submit inquiry request. Please try again.';
+                errorMessage.textContent = result.error || response.statusText || 'Failed to submit inquiry request. Please try again.';
+                // Populate debug details (visible only in debug mode or localhost)
+                const rawInfo = typeof result === 'string' ? result : (JSON.stringify(result, null, 2) || '');
+                if (errorDetails) errorDetails.textContent = `${rawInfo}\nStatus: ${response.status} ${response.statusText}`;
+                const isDebug = new URLSearchParams(window.location.search).get('debug') === '1' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+                if (isDebug && errorDetails) errorDetails.classList.remove('hidden');
+                else if (errorDetails) errorDetails.classList.add('hidden');
                 errorAlert.classList.remove('hidden');
                 errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
         } catch (error) {
             console.error('Submission error:', error);
+            // Show a friendly message, and detailed info in debug mode
             errorMessage.textContent = 'A network error occurred. Please verify your internet connection.';
+            if (errorDetails) errorDetails.textContent = error && (error.stack || error.message) ? (error.stack || error.message) : String(error);
+            const isDebug = new URLSearchParams(window.location.search).get('debug') === '1' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+            if (isDebug && errorDetails) errorDetails.classList.remove('hidden');
+            else if (errorDetails) errorDetails.classList.add('hidden');
             errorAlert.classList.remove('hidden');
             errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } finally {
