@@ -152,6 +152,7 @@
 <a class="font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="services.html">Services</a>
 <a class="font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="process.html">Process</a>
 <a class="font-label-md text-secondary font-bold underline decoration-2 underline-offset-4" href="solutions.html">Solutions</a>
+<a class="font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="contact.html">Contact</a>
 </nav>
 <div class="flex items-center gap-2">
 <button class="material-symbols-outlined text-primary dark:text-primary-fixed p-2 rounded-full hover:bg-surface-container-high transition-colors duration-200">
@@ -777,20 +778,49 @@
 </div>
 </div>
 <div class="w-full md:w-96 glass-card p-8 rounded-xl border border-white/50 shadow-xl">
+<!-- Success Alert -->
+<div id="success-alert" class="hidden mb-4 p-4 bg-secondary-fixed text-on-secondary-fixed-variant rounded-xl flex items-start gap-3 border border-secondary/20 animate-fade-in">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5">check_circle</span>
+<div>
+<p class="font-bold text-sm">Request Submitted!</p>
+<p class="text-xs mt-0.5">Kelvin Irungu will get back to you shortly.</p>
+</div>
+</div>
+<!-- Error Alert -->
+<div id="error-alert" class="hidden mb-4 p-4 bg-error-container text-on-error-container rounded-xl flex items-center gap-2 border border-error/20">
+<span class="material-symbols-outlined text-error text-lg">error</span>
+<p class="text-xs font-medium" id="error-message">Something went wrong.</p>
+</div>
 <form class="space-y-4">
 <div>
-<label class="block font-label-sm mb-1 text-on-surface">Full Name</label>
-<input class="w-full bg-white border border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" type="text"/>
+<label class="block font-label-sm mb-1 text-on-surface font-semibold">Full Name *</label>
+<input id="name" required class="w-full bg-white border border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" type="text" placeholder="John Doe"/>
 </div>
 <div>
-<label class="block font-label-sm mb-1 text-on-surface">Company Email</label>
-<input class="w-full bg-white border border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" type="email"/>
+<label class="block font-label-sm mb-1 text-on-surface font-semibold">Company Email *</label>
+<input id="email" required class="w-full bg-white border border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" type="email" placeholder="john@company.com"/>
 </div>
 <div>
-<label class="block font-label-sm mb-1 text-on-surface">Message</label>
-<textarea class="w-full bg-white border border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" rows="3"></textarea>
+<label class="block font-label-sm mb-1 text-on-surface font-semibold">Phone Number</label>
+<input id="phone" class="w-full bg-white border border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" type="tel" placeholder="+254 700 000 000"/>
 </div>
-<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-label-md hover:scale-[0.98] transition-transform" type="submit">Send Consultation Request</button>
+<div>
+<label class="block font-label-sm mb-1 text-on-surface font-semibold">Service Needed *</label>
+<select id="service" required class="w-full bg-white border border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all cursor-pointer">
+<option value="" disabled selected>Select a Service</option>
+<option value="Web Development">Web Development</option>
+<option value="Digital Marketing">Digital Marketing</option>
+<option value="Lead Generation & CRM Setup">Lead Generation & CRM Setup</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm mb-1 text-on-surface font-semibold">Message *</label>
+<textarea id="message" required class="w-full bg-white border border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" rows="3" placeholder="Project brief..."></textarea>
+</div>
+<button id="submit-btn" class="w-full bg-primary text-on-primary py-4 rounded-lg font-label-md flex items-center justify-center gap-2 hover:scale-[0.98] transition-transform" type="submit">
+<span id="btn-text">Send Consultation Request</span>
+<span id="btn-spinner" class="hidden w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+</button>
 </form>
 </div>
 </div>
@@ -826,6 +856,10 @@
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">hub</span>
 <span class="font-label-sm text-label-sm">Solutions</span>
 </a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant scale-95 active:scale-90 transition-transform" href="contact.html">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-sm text-label-sm">Contact</span>
+</a>
 </nav>
 <!-- Desktop Navigation Side Dock (Hidden on Mobile) -->
 <div class="hidden md:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-4 z-40">
@@ -842,6 +876,9 @@
 <a class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:scale-110 transition-transform" href="solutions.html" title="Solutions">
 <span class="material-symbols-outlined">hub</span>
 </a>
+<a class="w-10 h-10 rounded-full bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-all" href="contact.html" title="Contact Us">
+<span class="material-symbols-outlined">mail</span>
+</a>
 </div>
 </div>
 <script>
@@ -857,17 +894,81 @@
 
         // Simple form interaction
         const form = document.querySelector('form');
+        const submitBtn = document.getElementById('submit-btn');
+        const btnText = document.getElementById('btn-text');
+        const btnSpinner = document.getElementById('btn-spinner');
+        const successAlert = document.getElementById('success-alert');
+        const errorAlert = document.getElementById('error-alert');
+        const errorMessage = document.getElementById('error-message');
+
         if(form) {
-            form.addEventListener('submit', (e) => {
+            form.addEventListener('submit', async (e) => {
                 e.preventDefault();
-                const btn = form.querySelector('button');
-                btn.innerHTML = 'Sending...';
-                btn.classList.add('opacity-50');
-                setTimeout(() => {
-                    btn.innerHTML = 'Request Received';
-                    btn.classList.replace('bg-primary', 'bg-on-tertiary-container');
-                    form.reset();
-                }, 1500);
+                
+                // Reset alert states
+                if (successAlert) successAlert.classList.add('hidden');
+                if (errorAlert) errorAlert.classList.add('hidden');
+                
+                // Show spinner & disable button
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    if (btnSpinner) btnSpinner.classList.remove('hidden');
+                    if (btnText) btnText.textContent = 'Sending...';
+                }
+
+                const getApiUrl = () => {
+                    const host = window.location.hostname;
+                    if (host === 'localhost' || host === '127.0.0.1') {
+                        return 'http://localhost:3000/api/inquiry';
+                    }
+                    return 'https://global.leadske.com/api/inquiry';
+                };
+
+                const payload = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    service: document.getElementById('service').value,
+                    message: document.getElementById('message').value
+                };
+
+                try {
+                    const response = await fetch(getApiUrl(), {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (response.ok && result.success) {
+                        if (successAlert) successAlert.classList.remove('hidden');
+                        form.reset();
+                        if (successAlert) successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    } else {
+                        if (errorAlert) {
+                            errorMessage.textContent = result.error || 'Failed to submit inquiry request. Please try again.';
+                            errorAlert.classList.remove('hidden');
+                            errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                    }
+                } catch (error) {
+                    console.error('Submission error:', error);
+                    if (errorAlert) {
+                        errorMessage.textContent = 'A network error occurred. Please verify your connection.';
+                        errorAlert.classList.remove('hidden');
+                        errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                } finally {
+                    // Restore button state
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        if (btnSpinner) btnSpinner.classList.add('hidden');
+                        if (btnText) btnText.textContent = 'Send Consultation Request';
+                    }
+                }
             });
         }
 

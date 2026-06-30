@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact Us | LeadsKE</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#191c1e",
+                        "on-tertiary-fixed": "#002113",
+                        "inverse-on-surface": "#eff1f3",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-primary-container": "#7c839b",
+                        "surface-bright": "#f7f9fb",
+                        "on-surface-variant": "#45464d",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#004d6a",
+                        "tertiary-container": "#002113",
+                        "secondary": "#00668a",
+                        "surface-dim": "#d8dadc",
+                        "on-primary-fixed": "#131b2e",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e0e3e5",
+                        "tertiary": "#000000",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#c4e7ff",
+                        "primary-fixed": "#dae2fd",
+                        "secondary-container": "#40c2fd",
+                        "surface": "#f7f9fb",
+                        "primary": "#000000",
+                        "surface-container": "#eceef0",
+                        "surface-container-low": "#f2f4f6",
+                        "on-secondary-fixed-variant": "#004c69",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "primary-container": "#131b2e",
+                        "inverse-surface": "#2d3133",
+                        "outline-variant": "#c6c6cd",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed-dim": "#7bd0ff",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "outline": "#76777d",
+                        "surface-tint": "#565e74",
+                        "on-tertiary-container": "#009668",
+                        "inverse-primary": "#bec6e0",
+                        "primary-fixed-dim": "#bec6e0",
+                        "on-secondary-fixed": "#001e2c",
+                        "tertiary-fixed": "#6ffbbe",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f7f9fb",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e6e8ea"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-xl-mobile": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid #E2E8F0;
+        }
+        .gradient-bg {
+            background: radial-gradient(circle at 100% 0%, rgba(56, 189, 248, 0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 0% 100%, rgba(0, 102, 138, 0.05) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen gradient-bg flex flex-col justify-between selection:bg-secondary-container selection:text-on-secondary-container">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 z-50 w-full h-16 bg-surface border-b border-outline-variant shadow-sm flex items-center justify-between px-margin-mobile md:px-margin-desktop transition-colors duration-200 ease-in-out">
+    <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container flex items-center justify-center">
+            <img alt="LeadsKE Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOp7r616bBRM8zGRyUbFjXD1chA-gx6F2Aco-MUlfxAS-OP71nasvDHcRdZ5ze-YOu4JTC9OYN-zANJdsgI6qaCJSO6Cf2KuU7QE5uym92kZG3rcEPv2DdhHDJ3aT38bJAf97VKk9bydJtZ4QtCIeTSP4fss666zWq8Eh2Sko4XGityOpDtBoQ-zY2p9QAGXNOLudVeX9eqZ06zMa2G61d-EWESALymrgSf1D3xFRKAwohCRl28Lhzf4JK4TBhulr2v61vW7ZRWXw"/>
+        </div>
+        <span class="font-headline-md text-headline-md-mobile md:text-headline-md font-bold text-on-surface">LeadsKE</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-8">
+        <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="index.html">Home</a>
+        <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="services.html">Services</a>
+        <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="process.html">Process</a>
+        <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="solutions.html">Solutions</a>
+        <a class="font-label-md text-secondary font-bold underline decoration-2 underline-offset-4" href="contact.html">Contact</a>
+    </nav>
+    <div class="flex items-center gap-2">
+        <button class="p-2 rounded-full hover:bg-surface-container-high transition-colors">
+            <span class="material-symbols-outlined text-primary">more_vert</span>
+        </button>
+    </div>
+</header>
+
+<main class="pt-24 pb-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full flex-grow">
+    <!-- Page Header -->
+    <section class="mb-12 text-center md:text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container/20 border border-secondary-container/30 rounded-full mb-4">
+            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            <span class="font-label-sm text-label-sm text-secondary">Start a Project</span>
+        </div>
+        <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4 max-w-2xl">
+            Let's Engineer Your Growth Engine
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            Have questions about our lead generation, outreach models, or ready to build a high-performance web app? Tell us about your objectives.
+        </p>
+    </section>
+
+    <!-- Content Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+        
+        <!-- Info Panel (Left) -->
+        <div class="lg:col-span-5 flex flex-col gap-6">
+            
+            <div class="glass-card p-8 rounded-2xl border border-outline-variant shadow-sm flex flex-col gap-6 relative overflow-hidden group">
+                <div class="absolute -right-16 -top-16 w-32 h-32 bg-secondary/5 rounded-full blur-2xl group-hover:scale-150 transition-all duration-700"></div>
+                <h3 class="font-headline-md text-headline-md text-primary">Official Contacts</h3>
+                <p class="text-body-md text-on-surface-variant">Connect directly with our leadership team for enterprise audits and custom consulting packages.</p>
+                
+                <div class="space-y-6 mt-2">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-surface border border-outline-variant rounded-xl flex items-center justify-center shadow-sm">
+                            <span class="material-symbols-outlined text-secondary">person</span>
+                        </div>
+                        <div>
+                            <p class="font-label-sm text-on-surface-variant">Director</p>
+                            <p class="font-body-lg font-bold text-on-surface">Kelvin Irungu</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-surface border border-outline-variant rounded-xl flex items-center justify-center shadow-sm">
+                            <span class="material-symbols-outlined text-secondary">mail</span>
+                        </div>
+                        <div>
+                            <p class="font-label-sm text-on-surface-variant">Official Inquiry</p>
+                            <a class="font-body-lg font-bold text-on-surface hover:text-secondary transition-colors" href="mailto:info@leadske.com">info@leadske.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-surface border border-outline-variant rounded-xl flex items-center justify-center shadow-sm">
+                            <span class="material-symbols-outlined text-secondary">location_on</span>
+                        </div>
+                        <div>
+                            <p class="font-label-sm text-on-surface-variant">Location</p>
+                            <p class="font-body-lg font-bold text-on-surface">Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento Graphic Panel -->
+            <div class="bg-primary text-white p-8 rounded-2xl border border-primary relative overflow-hidden group">
+                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                <div class="relative z-10">
+                    <span class="material-symbols-outlined text-secondary-container text-4xl mb-4">bolt</span>
+                    <h4 class="font-headline-sm text-headline-sm text-white mb-2">Automated Integrations</h4>
+                    <p class="text-body-sm text-white/70">Our systems route inquiries instantly to CRM ecosystems like HubSpot, launching automation workflows in real-time.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Form Card (Right) -->
+        <div class="lg:col-span-7">
+            <div class="glass-card p-8 md:p-10 rounded-2xl shadow-xl border border-white/50 relative">
+                
+                <!-- Success Alert (Hidden initially) -->
+                <div id="success-alert" class="hidden mb-6 p-6 bg-secondary-fixed text-on-secondary-fixed-variant rounded-xl flex items-start gap-4 border border-secondary/20 animate-fade-in">
+                    <span class="material-symbols-outlined text-secondary text-2xl mt-0.5">check_circle</span>
+                    <div>
+                        <h4 class="font-bold text-lg">Inquiry Submitted Successfully!</h4>
+                        <p class="text-sm mt-1">Thank you. Your request has been logged in our system, and Kelvin Irungu will review it. An notification has been dispatched to our inbox.</p>
+                    </div>
+                </div>
+
+                <!-- Error Alert (Hidden initially) -->
+                <div id="error-alert" class="hidden mb-6 p-4 bg-error-container text-on-error-container rounded-xl flex items-center gap-3 border border-error/20">
+                    <span class="material-symbols-outlined text-error text-xl">error</span>
+                    <p class="text-sm font-medium" id="error-message">Something went wrong. Please check your network and try again.</p>
+                </div>
+
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block font-label-sm mb-1 text-on-surface font-semibold">Full Name *</label>
+                            <div class="relative">
+                                <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/60 text-xl">person</span>
+                                <input id="name" required class="w-full bg-white border border-outline-variant rounded-lg pl-10 pr-4 py-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" placeholder="John Doe" type="text"/>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block font-label-sm mb-1 text-on-surface font-semibold">Business Email *</label>
+                            <div class="relative">
+                                <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/60 text-xl">mail</span>
+                                <input id="email" required class="w-full bg-white border border-outline-variant rounded-lg pl-10 pr-4 py-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" placeholder="john@company.com" type="email"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block font-label-sm mb-1 text-on-surface font-semibold">Phone Number</label>
+                            <div class="relative">
+                                <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/60 text-xl">call</span>
+                                <input id="phone" class="w-full bg-white border border-outline-variant rounded-lg pl-10 pr-4 py-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" placeholder="+254 700 000 000" type="tel"/>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block font-label-sm mb-1 text-on-surface font-semibold">Service Needed *</label>
+                            <div class="relative">
+                                <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/60 text-xl">handyman</span>
+                                <select id="service" required class="w-full bg-white border border-outline-variant rounded-lg pl-10 pr-4 py-3 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all appearance-none cursor-pointer">
+                                    <option value="" disabled selected>Select a Service</option>
+                                    <option value="Web Development">Web Development</option>
+                                    <option value="Digital Marketing">Digital Marketing</option>
+                                    <option value="Lead Generation & CRM Setup">Lead Generation & CRM Setup</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block font-label-sm mb-1 text-on-surface font-semibold">Message / Project Brief *</label>
+                        <textarea id="message" required class="w-full bg-white border border-outline-variant rounded-lg p-4 focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-all" placeholder="Tell us about your project scope, timeline, and targets..." rows="4"></textarea>
+                    </div>
+
+                    <button id="submit-btn" class="w-full bg-primary text-on-primary py-4 rounded-xl font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-primary/95 hover:shadow-lg hover:shadow-primary/10 transition-all active:scale-[0.99]" type="submit">
+                        <span id="btn-text">Submit Inquiry Request</span>
+                        <span id="btn-spinner" class="hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                    </button>
+                    
+                    <p class="text-xs text-on-surface-variant/60 text-center mt-3 flex items-center justify-center gap-1">
+                        <span class="material-symbols-outlined text-sm">lock</span>
+                        Your details are encrypted and stored in compliance with local privacy standards.
+                    </p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-on-primary-container text-on-surface dark:text-inverse-on-surface border-t border-outline-variant dark:border-outline relative w-full flex flex-col items-center gap-4 py-8 px-margin-mobile mb-20 md:mb-0">
+    <div class="flex flex-col items-center gap-2">
+        <span class="font-headline-sm text-headline-sm font-bold text-primary">LeadsKE</span>
+        <p class="font-body-sm text-body-sm opacity-80 text-center">© 2026 LeadsKE. All rights reserved. Managed by Kelvin Irungu.</p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-6">
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="https://work.leadske.com">work.leadske.com</a>
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="https://enrich.leadske.com">enrich.leadske.com</a>
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="https://global.leadske.com">global.leadske.com</a>
+    </div>
+</footer>
+
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline shadow-md fixed bottom-0 left-0 w-full flex justify-around items-center py-2 px-4 z-50 rounded-t-xl md:hidden">
+    <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant transition-transform active:scale-90 scale-95" href="index.html">
+        <span class="material-symbols-outlined">home</span>
+        <span class="font-label-sm text-label-sm">Home</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant transition-transform active:scale-90 scale-95" href="services.html">
+        <span class="material-symbols-outlined">rocket_launch</span>
+        <span class="font-label-sm text-label-sm">Services</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant transition-transform active:scale-90 scale-95" href="process.html">
+        <span class="material-symbols-outlined">trending_up</span>
+        <span class="font-label-sm text-label-sm">Process</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant transition-transform active:scale-90 scale-95" href="solutions.html">
+        <span class="material-symbols-outlined">hub</span>
+        <span class="font-label-sm text-label-sm">Solutions</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-secondary-container dark:text-secondary-fixed font-bold bg-secondary-container/20 dark:bg-on-secondary-container rounded-full px-4 py-1 scale-95 transition-transform" href="contact.html">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+        <span class="font-label-sm text-label-sm">Contact</span>
+    </a>
+</nav>
+
+<!-- Desktop Sidebar Side Dock (Hidden on Mobile) -->
+<div class="hidden md:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-4 z-40">
+    <div class="glass-card p-3 rounded-full flex flex-col gap-4 shadow-xl">
+        <a class="w-10 h-10 rounded-full bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-all" href="index.html" title="Home">
+            <span class="material-symbols-outlined">home</span>
+        </a>
+        <a class="w-10 h-10 rounded-full bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-all" href="services.html" title="Services">
+            <span class="material-symbols-outlined">rocket_launch</span>
+        </a>
+        <a class="w-10 h-10 rounded-full bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-all" href="process.html" title="Process">
+            <span class="material-symbols-outlined">trending_up</span>
+        </a>
+        <a class="w-10 h-10 rounded-full bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-all" href="solutions.html" title="Solutions">
+            <span class="material-symbols-outlined">hub</span>
+        </a>
+        <a class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:scale-110 transition-transform" href="contact.html" title="Contact Us">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+        </a>
+    </div>
+</div>
+
+<script>
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = document.getElementById('btn-text');
+    const btnSpinner = document.getElementById('btn-spinner');
+    const successAlert = document.getElementById('success-alert');
+    const errorAlert = document.getElementById('error-alert');
+    const errorMessage = document.getElementById('error-message');
+
+    // Auto-detect the API endpoint (local testing vs production)
+    const getApiUrl = () => {
+        const host = window.location.hostname;
+        if (host === 'localhost' || host === '127.0.0.1') {
+            return 'http://localhost:3000/api/inquiry';
+        }
+        return 'https://global.leadske.com/api/inquiry';
+    };
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        // Reset alert states
+        successAlert.classList.add('hidden');
+        errorAlert.classList.add('hidden');
+        
+        // Show spinner & disable button
+        submitBtn.disabled = true;
+        btnText.textContent = 'Submitting Inquiries...';
+        btnSpinner.classList.remove('hidden');
+
+        const payload = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            service: document.getElementById('service').value,
+            message: document.getElementById('message').value
+        };
+
+        try {
+            const apiUrl = getApiUrl();
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                // Show success message and clear form
+                successAlert.classList.remove('hidden');
+                form.reset();
+                // Scroll to top of card to show alert
+                successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+                // Show API error
+                errorMessage.textContent = result.error || 'Failed to submit inquiry request. Please try again.';
+                errorAlert.classList.remove('hidden');
+                errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        } catch (error) {
+            console.error('Submission error:', error);
+            errorMessage.textContent = 'A network error occurred. Please verify your internet connection.';
+            errorAlert.classList.remove('hidden');
+            errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } finally {
+            // Restore button state
+            submitBtn.disabled = false;
+            btnText.textContent = 'Submit Inquiry Request';
+            btnSpinner.classList.add('hidden');
+        }
+    });
+</script>
+</body>
+</html>
